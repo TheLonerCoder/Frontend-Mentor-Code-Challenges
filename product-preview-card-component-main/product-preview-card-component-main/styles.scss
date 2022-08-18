@@ -1,3 +1,5 @@
+$green: hsl(158, 36%, 37%);
+
 body {
     background-color: hsl(30, 38%, 92%);
 }
@@ -6,5 +8,19 @@ body {
 #card {
     background-color: white;
     width: 40vw;
+    border-radius: 20px;
     // height: 40;
+}
+
+button {
+    background-color: $green;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+#price1 {
+    color: $green;
 }
