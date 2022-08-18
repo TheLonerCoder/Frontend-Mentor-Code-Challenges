@@ -1,4 +1,6 @@
 $green: hsl(158, 36%, 37%);
+$font1: 'Fraunces', serif;
+$font2: 'Montserrat', sans-serif;
 
 body {
     background-color: hsl(30, 38%, 92%);
@@ -13,10 +15,14 @@ body {
 #card {
     background-color: white;
     // width: 40%;
-    width: 50%;
+    // min-width: 600px;
+    width: 650px;
     border-radius: 10px;
 
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     
 
     // height: 40;
@@ -28,11 +34,20 @@ button {
     border: none;
     width: 200px;
     padding: 5px 15px;
+    border-radius: 10px;
+    font-family: $font2;
+
+
+    &:hover {
+        background-color: darken($color: $green, $amount: 10);
+        cursor: pointer;
+    }
 }
 
 img {
-    width: 25vw;
-    margin-right: 50px;
+    // width: 25vw;
+    width: 300px;
+    // margin-right: 50px;
     border-radius: 10px;
 }
 
@@ -40,3 +55,33 @@ img {
     color: $green;
 }
 
+#price2 {
+    text-decoration: line-through;
+}
+
+#contentDiv {
+    padding: 5px 20px;
+    width: 300px;
+    // width: 20%;
+}
+
+p {
+    font-size: 14px;
+    font-family: $font2;
+    color: hsl(228, 12%, 48%);
+    
+}
+
+
+h1 {
+    font-family: $font1;
+}
+
+
+h3 {
+    font-family: $font2;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+}
