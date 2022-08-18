@@ -5,6 +5,8 @@
 * {
     a {
         text-decoration: none;
+        color: purple;
+        // font-style: italic;
     }
 }
 
@@ -21,6 +23,7 @@ body {
        h1, h2, h3, h4, h5, h6 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
+        color: white;
        }
 }
 
@@ -34,9 +37,13 @@ body {
 
 header {
     padding: 10%;
-
+    
     p, ol {
-        padding: 0 10%;
+        padding: 10px 10%;
+        background: rgba($color: white, $alpha: 0.2);
+        border-radius: 40px;
+        color: lighten($color: black, $amount: 20);
+        line-height: 1.5;
     }
 }
 
@@ -65,3 +72,4 @@ header {
     top: 15%;
     left: 50%;
 }
+
