@@ -1,13 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap");
 * a {
   text-decoration: none;
 }
 
 body {
   background-color: lightblue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+#welcome {
+  color: white;
+  font-size: 3rem;
+}
+
+header {
+  padding: 10%;
+}
+
+header p, header ol {
+  padding: 0 10%;
 }
 
 .projects {
   background-color: white;
   color: black;
+  width: 50vw;
+}
+
+.clouds {
+  position: absolute;
+  z-index: -1;
+}
+
+#cloud1 {
+  top: 5%;
+  left: 5px;
+}
+
+#cloud2 {
+  top: 50%;
+  right: 5px;
+}
+
+#cloud3 {
+  top: 15%;
+  left: 50%;
 }
 /*# sourceMappingURL=app.css.map */
