@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+$Font1: 'Outfit', sans-serif;
+
 $White: hsl(0, 0%, 100%);
 $Light: hsl(212, 45%, 89%);
 $Gray: hsl(220, 15%, 55%);
@@ -6,14 +11,46 @@ $Dark: hsl(218, 44%, 22%);
 
 body {
   background-color: $Light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #mainBox {
   background-color: $White;
-  width: 20%;
+  // width: 20%;
+  width: 278.8px;
+  border-radius: 10px;
+  padding-top: 15px;
+  // min-width: 278.8px;
   // height: 100px;
+  margin-bottom: 20px;
 
   img {
-    width: 200px;
+    width: 250px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+
+#para1, #para2 {
+  font-family: $Font1;
+}
+
+#para1 {
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+#para2 {
+  font-weight: 400;
+  color: $Gray;
+  text-align: center;
+  padding: 0px 25px;
+  padding-bottom: 30px;
 }
