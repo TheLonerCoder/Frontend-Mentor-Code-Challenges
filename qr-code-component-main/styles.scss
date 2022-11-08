@@ -1,0 +1,19 @@
+$White: hsl(0, 0%, 100%);
+$Light: hsl(212, 45%, 89%);
+$Gray: hsl(220, 15%, 55%);
+$Dark: hsl(218, 44%, 22%);
+
+
+body {
+  background-color: $Light;
+}
+
+#mainBox {
+  background-color: $White;
+  width: 20%;
+  // height: 100px;
+
+  img {
+    width: 200px;
+  }
+}
