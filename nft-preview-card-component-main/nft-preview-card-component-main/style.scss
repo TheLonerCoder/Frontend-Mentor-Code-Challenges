@@ -1,0 +1,20 @@
+$BodyColor: hsl(217, 54%, 11%);
+$CardColor: hsl(216, 50%, 16%);
+$LineColor: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+$Softblue: hsl(215, 51%, 70%);
+$Light: hsl(178, 100%, 50%);
+
+
+body {
+  background-color: $BodyColor;
+}
+
+#card {
+  background-color: $CardColor;
+}
+
+
+.light {
+  background-color: $Light;
+}
