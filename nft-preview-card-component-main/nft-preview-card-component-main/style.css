@@ -1,1 +1,1 @@
-body{background-color:#0d192b}#card{background-color:#14253d}.light{background-color:#00fff7}
+body{background-color:#0d192b}#card{background-color:#14253d}#title{color:#fff}#title:hover{color:#00fff7;cursor:pointer}#description,#time,#bottomText{color:#8bacda}#description span,#time span,#bottomText span{color:#fff}#description span:hover,#time span:hover,#bottomText span:hover{color:#00fff7;cursor:pointer}

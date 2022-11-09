@@ -15,6 +15,24 @@ body {
 }
 
 
-.light {
-  background-color: $Light;
+#title {
+  color: $White; 
+
+  &:hover {
+    color: $Light;
+    cursor: pointer;
+  }
+}
+
+#description, #time, #bottomText {
+  color: $Softblue;
+
+  span {
+    color: $White;
+
+    &:hover {
+      color: $Light;
+      cursor: pointer;
+    }
+  }
 }
