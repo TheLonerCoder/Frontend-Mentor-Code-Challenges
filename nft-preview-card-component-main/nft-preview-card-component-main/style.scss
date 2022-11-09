@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$mainFont: 'Outfit', sans-serif;
+
 $BodyColor: hsl(217, 54%, 11%);
 $CardColor: hsl(216, 50%, 16%);
 $LineColor: hsl(215, 32%, 27%);
@@ -8,6 +12,7 @@ $Light: hsl(178, 100%, 50%);
 
 body {
   background-color: $BodyColor;
+  font-family: $mainFont;
 }
 
 #card {
@@ -17,6 +22,7 @@ body {
 
 #title {
   color: $White; 
+  font-weight: 600;
 
   &:hover {
     color: $Light;
@@ -26,6 +32,7 @@ body {
 
 #description, #time, #bottomText {
   color: $Softblue;
+  font-weight: 300;
 
   span {
     color: $White;
@@ -35,4 +42,13 @@ body {
       cursor: pointer;
     }
   }
+}
+
+#price {
+  color: $Light;
+  font-weight: 400;
+}
+
+hr {
+  color: $LineColor;
 }
