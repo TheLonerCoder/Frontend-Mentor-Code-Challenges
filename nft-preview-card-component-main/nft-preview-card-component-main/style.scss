@@ -13,15 +13,22 @@ $Light: hsl(178, 100%, 50%);
 body {
   background-color: $BodyColor;
   font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 #card {
   background-color: $CardColor;
-  width: 25%;
-  max-width: 600px;
-  min-width: 200px;
+  // width: 25%;
+  width: 320px;
+  // max-width: 600px;
+  // min-width: 200px;
   padding: 25px 25px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -34,6 +41,16 @@ body {
     cursor: pointer;
   }
 }
+
+
+#clockIcon {
+  margin-right: 5px;
+}
+
+#nftIcon {
+  margin-right: 5px;
+}
+
 
 #description, #time, #bottomText {
   color: $Softblue;
@@ -63,11 +80,46 @@ hr {
   filter: drop-shadow(0px 0px 1px white);
   width: 30px;
   height: 30px;
+
+  margin-right: 10px;
 }
 
 #imageDiv {
 
   width: 100%;
+  height: 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  // content: url('./images/image-equilibrium.jpg');
+  background-image: url('./images/image-equilibrium.jpg');
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+
+    #imageOverlay {
+      visibility: visible;
+    }
+  }
+
+  #imageOverlay {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $Light, $alpha: 0.5);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+  }
+
+
 
   #mainImage 
   {
@@ -77,18 +129,27 @@ hr {
 
     &:hover {
       // background: url('./images/image-avatar.png');
-      content: url('./images/image-avatar.png');
+      content: url('./images/image-equilibrium.jpg');
       
       // box-shadow: inset 0 0 0 1000px red;
       // box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-      box-shadow: inset 0 0 0 50vw rgba(255,0,150,0.3);
+      box-shadow: inset 0 0 0 50vw $Light;
       cursor: pointer;
 
-      background-image: url("./images/image-avatar.png"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+      // background-image: url("./images/image-equilibrium.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+      // background-image: url("./images/image-equilibrium.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
       background-blend-mode: overlay;
     }
 
   }
+}
+
+
+#midSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 
