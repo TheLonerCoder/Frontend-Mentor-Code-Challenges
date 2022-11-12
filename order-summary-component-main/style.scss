@@ -12,6 +12,18 @@ $DarkBlue: hsl(223, 47%, 23%);
 
 body {
   font-family: $Font1;
+  background-color: $PaleBlue;
+}
+
+
+#mainDiv {
+  width: 30%;
+  background-color: $VeryPaleBlue;
+}
+
+
+#hero {
+  width: 100%;
 }
 
 #summary {
@@ -43,15 +55,35 @@ button, a {
 #change {
   color: $BrightBlue;
   text-decoration: underline;
+
+  &:hover {
+    color: rgba($color: $BrightBlue, $alpha: 0.8);
+    text-decoration: none;
+  }
 }
+
+#cancel, #payment {
+  // padding: 20px 40px;
+  // width: 100%;
+}
+
 
 #payment {
   color: $VeryPaleBlue;
   background-color: $BrightBlue;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgba($color: $BrightBlue, $alpha: 0.8);
+  }
 }
 
 #cancel {
   color: $DesaturatedBlue;
   background-color: rgba($color: $VeryPaleBlue, $alpha: 0);
+
+  &:hover {
+    color: black;
+  }
 }
 
