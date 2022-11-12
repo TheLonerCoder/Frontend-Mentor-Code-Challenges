@@ -21,16 +21,37 @@ body {
 
 #description {
   font-weight: 500;
+  color: $DesaturatedBlue;
 }
 
 #planDiv {
+
+
   p {
     font-weight: 500;
+    color: $DesaturatedBlue;
   }
 }
 
 
-button {
+button, a {
   font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+#change {
+  color: $BrightBlue;
+  text-decoration: underline;
+}
+
+#payment {
+  color: $VeryPaleBlue;
+  background-color: $BrightBlue;
+}
+
+#cancel {
+  color: $DesaturatedBlue;
+  background-color: rgba($color: $VeryPaleBlue, $alpha: 0);
 }
 
