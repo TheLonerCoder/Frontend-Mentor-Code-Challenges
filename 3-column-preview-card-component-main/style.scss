@@ -57,11 +57,21 @@ button {
   border: none;
   background-color: $VeryLightGray;
   margin-top: 100px;
+  margin-bottom: 5px;
 
   border-radius: 30px;
   padding: 15px 35px;
   font-size: 15px;
   font-family: $Font2;
+
+
+  &:hover {
+    padding: 12px 35px;
+    cursor: pointer;
+    background-color: rgba($color: #000000, $alpha: 0);
+    border: $VeryLightGray 2px solid;
+    color: $VeryLightGray !important;
+  }
 }
 
 #box1 {
