@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+$Font1: 'Big Shoulders Display', cursive;
+$Font2: 'Lexend Deca', sans-serif;
+
 $BrightOrange: hsl(31, 77%, 52%);
 $DarkCyan: hsl(184, 100%, 22%);
 $VeryDarkCyan: hsl(179, 100%, 13%);
+$TransparentWhite: hsla(0, 0%, 100%, 0.75); //(paragraphs)
+$VeryLightGray: hsl(0, 0%, 95%); //(background, headings, buttons)
 
 
 body {
@@ -8,17 +16,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $VeryLightGray;
 }
 
-h1, p {
-  color: white;
+h1 {
+  color: $VeryLightGray;
+  font-family: $Font1;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
+p {
+  color: $TransparentWhite;
+  font-family: $Font2;
+  font-size: 15px;
+
+  // letter-spacing: 2px;
+  // word-spacing: ;
+  line-height: 1.5rem;
+}
 
 #flexDiv {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-radius: 8px;
+  overflow: hidden;
 
   margin-bottom: 20px;
 
@@ -32,11 +55,13 @@ h1, p {
 
 button {
   border: none;
-  background-color: white;
+  background-color: $VeryLightGray;
   margin-top: 100px;
 
-  border-radius: 20px;
-  padding: 10px 10px;
+  border-radius: 30px;
+  padding: 15px 35px;
+  font-size: 15px;
+  font-family: $Font2;
 }
 
 #box1 {
